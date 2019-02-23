@@ -1,4 +1,4 @@
-// Package json is a simple JSON encoder/decoder for gopher-lua.
+// gluajson is a simple JSON encoder/decoder for gopher-lua.
 //
 // Documentation
 //
@@ -15,8 +15,8 @@
 //  nil      | null
 //  number   | number
 //  string   | string
-//  table    | object: when table is non-empty and has only string keys
-//           | array:  when table is empty, or has only sequential numeric keys
+//  table    | object: when table is empty or has only string keys
+//           | array:  when table is non-empty and has only sequential numeric keys
 //           |         starting from 1
 //
 // Attempting to encode any other Lua type will result in an error.
@@ -25,9 +25,9 @@
 //
 // Below is an example usage of the library:
 //  import (
-//      luajson "layeh.com/gopher-json"
+//      luajson "github.com/fiatjaf/gluajson"
 //  )
 //
 //  L := lua.NewState()
 //  luajson.Preload(s)
-package json // import "layeh.com/gopher-json"
+package gluajson // import "github.com/fiatjaf/gluajson"

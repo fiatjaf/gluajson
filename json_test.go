@@ -1,4 +1,4 @@
-package json
+package gluajson
 
 import (
 	"encoding/json"
@@ -18,7 +18,7 @@ func TestSimple(t *testing.T) {
 	assert(json.encode(1) == "1")
 	assert(json.encode(-10) == "-10")
 	assert(json.encode(nil) == "null")
-	assert(json.encode({}) == "[]")
+	assert(json.encode({}) == "{}")
 	assert(json.encode({1, 2, 3}) == "[1,2,3]")
 
 	local _, err = json.encode({1, 2, [10] = 3})

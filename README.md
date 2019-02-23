@@ -1,6 +1,8 @@
-# gopher-json [![GoDoc](https://godoc.org/layeh.com/gopher-json?status.svg)](https://godoc.org/layeh.com/gopher-json)
+# gluajson [![GoDoc](https://godoc.org/github.com/fiatjaf/gluajson?status.svg)](https://godoc.org/github.com/fiatjaf/gluajson)
 
-Package json is a simple JSON encoder/decoder for [gopher-lua](https://github.com/yuin/gopher-lua).
+gluajson is a simple JSON encoder/decoder for [gopher-lua](https://github.com/yuin/gopher-lua).
+
+This is a fork of https://layeh.com/gopher-json/ that makes an empty Lua table (`{}`) translate to an empty object (`{}`) and not an empty array (`[]`).
 
 ## License
 
